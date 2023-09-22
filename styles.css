@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@media (max-width: 360px){
+    .cards, .attack-cards  {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: 'Russo One', sans-serif;
+    background-color: #9400FF;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #e9cffc;
+}
+
+button {
+    border: 1px solid hotpink;
+    padding: 10px;
+}
+
+#select-pet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-pet {
+    width: 260px;
+    height: 50px;
+    border-radius: 20px;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+
+#select-atack {
+    flex-direction: column;
+    align-items: center;
+}
+
+#message {
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#btn-restart {
+    border-radius: 20px;
+    color: black;
+    font-family: 'Russo One', sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: 36px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 20px;
+}
+
+.cards, .attack-cards {
+    display: flex;
+    gap:10px
+}
+
+.cardsMokepon {
+    width: 184px;
+    height: 100px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid hotpink;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardsMokepon img {
+    width: 80px;
+}
+
+.cardsMokepon:hover {
+    cursor: pointer;
+}
+
+.btn-attack {
+    background-color: aliceblue;
+    font-family: 'Russo One', sans-serif;
+}
+
+.attack {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin-top: 15px;
+}
+
+.player-information, .enemy-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.padding {
+    padding: 10px;
+}
