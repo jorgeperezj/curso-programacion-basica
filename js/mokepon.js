@@ -75,7 +75,7 @@ ratigueya.attacks.push(
     { name: "🌱", id: "btn-soil" },
 )
 
-mokepones.push(hipodoge, capipepo, ratigueya, langostelvis, tucapalma, pydos)
+mokepones.push(hipodoge, capipepo, ratigueya)
 
 function startGame() {
     selectAttack.style.display = "none"
