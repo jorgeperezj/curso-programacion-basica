@@ -3,28 +3,28 @@ function aleatorio(min, max) {
 }
 
 function eleccion(jugada) {
-    let resultado = ""
+    let resultado = ''
     if (jugada == 1) {
-        resultado = "Piedra 🪨"
+        resultado = 'Piedra 🪨'
     } else if (jugada == 2) {
-        resultado = "Papel 🧻"
+        resultado = 'Papel 🧻'
     } else if (jugada == 3) {
-        resultado = "Tijera ✂️"
+        resultado = 'Tijera ✂️'
     } else {
-        resultado = "MAL ELEGIDO ✖️"
+        resultado = 'MAL ELEGIDO ✖️'
     }
     return resultado
 }
 
 function marcador(params) {
     if (params == 0) {
-        alert("PERDISTE 😞")
+        alert('PERDISTE 😞')
         perdidas = perdidas + 1
     } else if (params == 1) {
-        alert("GANASTE 🥳")
+        alert('GANASTE 🥳')
         triunfos = triunfos + 1
     } else if (params == 2) {
-        alert("EMPATE 🤜🏼🤛🏼")
+        alert('EMPATE 🤜🏼🤛🏼')
         empates = empates + 1
     }
     return 0
@@ -39,9 +39,9 @@ let empates = 0
 
 while (triunfos < 3 && perdidas < 3) {
     pc = aleatorio(1, 3)
-    jugador = prompt("Elige: \n1 Piedra 🪨 \n2 Papel 🧻 \n3 Tijera ✂️")
-    alert("Jugador elige " + eleccion(jugador))
-    alert("PC elige " + eleccion(pc))
+    jugador = prompt('Elige: \n1 Piedra 🪨 \n2 Papel 🧻 \n3 Tijera ✂️')
+    alert('Jugador elige ' + eleccion(jugador))
+    alert('PC elige ' + eleccion(pc))
 
     // COMBATE
     if (pc == jugador) {
@@ -57,4 +57,4 @@ while (triunfos < 3 && perdidas < 3) {
     }
 }
 
-alert("🥳 Ganados: " + triunfos + "\n😞 Perdidos: " + perdidas + "\n🤜🏼🤛🏼Empates: " + empates)
+alert('🥳 Ganados: ' + triunfos + '\n😞 Perdidos: ' + perdidas + '\n🤜🏼🤛🏼Empates: ' + empates)

@@ -19,6 +19,19 @@
         <button id="btn-pet">Seleccionar</button>
     </section>
 
+    <section id="show-map">
+        <h1 class="title">Recorrer el mapa con tu Mokepon</h1>
+        <canvas id="map"></canvas>
+        <div style="display: block; margin-top: 15px;">
+            <button onmouseup="stopMove()" onmousedown="moveUp()">⬆️</button>
+        </div>
+        <div style="display: flex;">
+            <button onmouseup="stopMove()" onmousedown="moveLeft()">⬅️</button>
+            <button onmouseup="stopMove()" onmousedown="moveDown()">⬇️</button>
+            <button onmouseup="stopMove()" onmousedown="moveRight()">➡️</button>
+        </div>
+    </section>
+
     <section id="select-atack">
         <h1 class="title">MOKEPON</h1>
 
